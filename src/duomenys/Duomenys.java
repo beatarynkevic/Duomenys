@@ -109,7 +109,7 @@ public class Duomenys {
                 return s2.length() - s1.length();
             };
 
-            l.sort (c);
+            l.sort ((s1, s2) -> s2.length() - s1.length());
             System.out.println (l);
             System.out.println ("---------");
     }
